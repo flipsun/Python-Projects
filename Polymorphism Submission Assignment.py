@@ -45,7 +45,7 @@ class newCustomer(User):
     name = "Barry"
     email = "b.allen@gmail.com"
 
-    def getLoginInfo(self):
+    def getLoginInfo(new):
         entry_name = input("Enter your name: ")
         entry_email = input("Enter your email: ")
         if (entry_name == new.name and entry_email == new.email):
@@ -62,5 +62,5 @@ customer.getLoginInfo()
 manager = Employee("Roman", "roman.bran@gmail.com", "password", 1234)
 manager.getLoginInfo()
 
-customer = User("Barry", "b.allen@gmail.com", "password1", 2345)
+customer = newCustomer("Barry", "b.allen@gmail.com", "password1", 2345)
 customer.getLoginInfo()
