@@ -1,6 +1,6 @@
 
 
-#Parent Clas User
+#Parent Class User
 class User:
     name = "Broman"
     email = "broman@gmail.com"
@@ -11,7 +11,7 @@ class User:
         entry_email = input("Enter your email: ")
         entry_password = input("Enter your password: ")
         if (entry_email == self.email and entry_password == self.password):
-            print("Welcome, {}!".format(entry_name))
+            print("Welcome , {}!".format(entry_name))
         else:
             print("The password or email is incorrect.")
 
@@ -45,7 +45,7 @@ class newCustomer(User):
     name = "Barry"
     email = "b.allen@gmail.com"
 
-    def getNewLoginInfo():
+    def getLoginInfo(self):
         entry_name = input("Enter your name: ")
         entry_email = input("Enter your email: ")
         if (entry_name == new.name and entry_email == new.email):
@@ -53,9 +53,6 @@ class newCustomer(User):
         else:
             print("You did not enter the correct information!")
             
-    def __init__(name,email):
-        User.name = name
-        User.email = email
 
 # Following code invokes methods inside each class for User and Employee
 
@@ -65,5 +62,5 @@ customer.getLoginInfo()
 manager = Employee("Roman", "roman.bran@gmail.com", "password", 1234)
 manager.getLoginInfo()
 
-newCustomer = User("Barry", "b.allen@gmail.com", "password1", 2345)
-newCustomer.getLoginInfo()
+customer = User("Barry", "b.allen@gmail.com", "password1", 2345)
+customer.getLoginInfo()
