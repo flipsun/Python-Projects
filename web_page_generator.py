@@ -23,8 +23,8 @@ class ParentWindow(Frame):
         self.lblDisplay.grid(row=1, column=1,padx=(30,30), pady=(30,0))
 
         #Creates display input text box
-        self.displayText = Entry(self.master,text=self.varText, font=("Helvetica", 12))
-        self.displayText.grid(row=1, column=1,padx=(30,30), pady=(30,0), sticky=E)
+        self.displayText = Entry(self.master,text=self.varText, width=50, font=("Helvetica", 12))
+        self.displayText.grid(row=1, column=0,padx=(0,10), pady=(0,0), sticky=W)
 
         #Creates Default HTML Page
         self.btn = Button(self.master, text="Default HTML Page", width=20, height=2, command=self.defaultHTML)
